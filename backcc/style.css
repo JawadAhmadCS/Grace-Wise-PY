@@ -1,0 +1,55 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff; /* Main background */
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Light track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0; /* Subtle thumb */
+  border-radius: 4px;
+  border: 2px solid #f3f4f6;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d8dee5; /* Slightly darker hover */
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  background-color: #f9fafb;
+  color: #171717;
+  border: 1px solid #e2e8f0;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Typing indicator animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.typing-indicator {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Wrap text properly */
+.message-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
