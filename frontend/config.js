@@ -3,6 +3,6 @@
 // If left blank or null, the UI will use mock responses for testing.
 
 const CONFIG = {
-  API_URL: "http://localhost:8000/api/ask", // <- default backend endpoint
+  API_URL: "https://jawadahmadcs.pythonanywhere.com/api/ask", // <- default backend endpoint
   MOCK_MODE: false
 };
