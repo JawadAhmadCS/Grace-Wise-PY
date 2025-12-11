@@ -1,1 +1,3 @@
+# Never push environment secrets
 .env
+*.env
