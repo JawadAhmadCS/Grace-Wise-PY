@@ -118,4 +118,4 @@ if __name__ == "__main__":
     build_index()
 
     # OPTION 2: run your single-file embedding
-    embed_single_file()
+    #embed_single_file()
